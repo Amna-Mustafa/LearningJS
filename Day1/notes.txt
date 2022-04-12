@@ -1,0 +1,25 @@
+What is javascript?
+
+Javascript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else.
+
+Client-Side Javascript?
+
+Client-side scripting simply means running scripts, such as JavaScript, on the client device, usually within a browser. All kinds of scripts can run on the client-side if they are written in JavaScript because JavaScript is universally supported.
+
+Advantages of javascript
+
+Speed, Simplicity, Popularity, Server load, Versatility
+
+Limitations of Javascript
+
+Client-side security, Browser support, Lack of debugging facility
+
+Javascript Development Tools
+
+Atom, Visual Studio Code, Webstorm
+
+defer and async in javascript?
+
+	•	If async is present: The script is downloaded in parallel to parsing the page, and executed as soon as it is available (before parsing completes)
+	•	If defer is present (and not async): The script is downloaded in parallel to parsing the page, and executed after the page has finished parsing
+	•	If neither async nor defer is present: The script is downloaded and executed immediately, blocking parsing until the script is completed
