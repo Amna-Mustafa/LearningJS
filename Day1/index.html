@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./demo.js" async  // Executed as soon as it is available (before parsing completes)></script> 
+
+</head>
+<body>
+    <p id="example">Learning JS</p>
+</body>
+<script src="./demo.js" defer  // Executed after the page has finished parsing></script>  
+<script>
+    let test = 'Java';
+    let TEST = "JavasScript";   //  Case Sensitive
+    document.getElementById('example').innerHTML = test;
+    
+</script>
+</html>
