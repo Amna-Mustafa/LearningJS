@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS BASICS</title>
+
+</head>
+<body>
+    <h3>Learning JS Day 2</h3>
+    <h4>Switch Statement</h4>
+    <p id="demo"></p>
+    <h4>Common Block Codes</h4>
+    <p id="new"></p>
+
+    <h4>For Loop</h4>
+    <p id="get_count"></p>
+
+    <h4>Function Definition</h4>
+    <p id="check"></p>
+</body>
+<script>
+    var age = 20;
+
+    // if Statement
+    if( age > 18 ) {
+        document.write("<b>Qualifies for driving</b> <br><br>" );
+    }
+    // if else statement
+    {
+        let test = 17; // block scope
+        if( test > 18 ) {
+        document.write("<b>Qualifies for driving</b>");
+        } else {
+            document.write("<b>Does not qualify for driving</b> <br><br>");
+        }
+    } 
+    // if else if statement
+    var book = "maths";
+    if( book == "history" ) {
+        document.write("<b>History Book</b>");
+    } else if( book == "maths" ) {
+        document.write("<b>Maths Book</b>");
+    } else if( book == "economics" ) {
+        document.write("<b>Economics Book</b>");
+    } else {
+        document.write("<b>Unknown Book</b>");
+    }
+    
+    // switch statement
+    let day;
+    switch (new Date().getDay()) {
+    case 0:
+        day = "Sunday";
+        break;
+    case 1:
+        day = "Monday";
+        break;
+    case 2:
+        day = "Tuesday";
+        break;
+    case 3:
+        day = "Wednesday";
+        break;
+    case 4:
+        day = "Thursday";
+        break;
+    case 5:
+        day = "Friday";
+        break;
+    case 6:
+        day = "Saturday";
+    }
+    document.getElementById("demo").innerHTML = "Today is " + day;
+
+    /// common code blocks
+    let text;
+    switch (new Date().getDay()) {
+    case 4:
+    case 5:
+        text = "Soon it is Weekend";
+        break;
+    case 0:
+    case 6:
+        text = "It is Weekend";
+        break;
+    default:
+        text = "Looking forward to the Weekend";
+    }
+    document.getElementById("new").innerHTML = text;
+
+    let count = "";
+
+    for (let i = 0; i < 5; i++) {
+    count += "The number is " + i + "<br>";
+    }
+
+    document.getElementById("get_count").innerHTML = count;
+
+    var x = myFunction(4, 3);
+    document.getElementById("check").innerHTML = x;
+
+    function myFunction(a, b) {
+    return a * b;
+    }
+</script>
+</html>
