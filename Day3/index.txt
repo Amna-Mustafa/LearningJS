@@ -1,0 +1,61 @@
+JS-BASICS – Day3
+
+1. What is an Event?
+
+-> JavaScript's interaction with HTML is handled through events. 
+-> When the page loads, it is called an event. 
+-> When the user clicks a button, that click too is an event. 
+
+HTML 5 Standard Events 
+
+-> onblur,onchange,onkeyup,onload etc
+
+2. Cookies
+
+    Cookies are data, stored in small text files, on your computer.
+
+    When a web server has sent a web page to a browser, the connection is shut down, and the server forgets everything about the user.
+
+    Cookies were invented to solve the problem "how to remember information about the user":
+
+    When a user visits a web page, his/her name can be stored in a cookie.
+    Next time the user visits the page, the cookie "remembers" his/her name.
+    Cookies are saved in name-value pairs like:
+
+    username = John Doe
+
+3. Page Redirect 
+
+    Redirect is nothing but a mechanism of send users on a different URL from the original one.
+
+    Page Refresh
+
+    In JavaScript, you refresh the page using document.location.reload().
+
+    Page Redirection Works?
+
+    If you move the site to a separate domain or create a new URL for an old page, you should always use the server redirection.
+    location.href = 'new_url';
+
+4.  Dialog Box 
+    Alert Dialog Box 
+        An alert box is often used if you want to make sure information comes through to the user.
+        window.alert("Success");
+
+    Confirmation Dialog Box
+        The confirm() method displays a dialog box with a message, an OK button, and a Cancel button.
+
+        confirm("Press a button!\nEither OK or Cancel.");
+
+    Prompt Dialog Box
+        The prompt() method displays a dialog box that prompts the user for input
+
+        prompt("Enter your name", "John Doe");
+
+5. Void Keyword
+
+    When a function is void, it means that the function returns nothing. 
+
+6.  Page Printing 
+
+    To print a page in JavaScript, use the print() method. It opens up the standard dialog box.
