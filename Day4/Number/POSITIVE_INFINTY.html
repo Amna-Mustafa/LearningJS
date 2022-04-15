@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Number POSITIVE_INFINITY</title>          
+   </head>
+   
+   <body>
+      <p>Click the following to see the result:</p>     
+      <form>
+         <input type = "button" value = "Click Me" onclick = "showValue();" />
+      </form> 
+      <script type = "text/javascript">
+
+        // POSITIVE_INFINITY returns positive infinity.
+
+        // POSITIVE_INFINITY is "something higher than any other number".
+        function showValue() {
+            var bigNumber = Number.MAX_VALUE * 2               
+            if (bigNumber == Number.POSITIVE_INFINITY) {
+                alert("Value of bigNumber : " + bigNumber );
+            }
+        }
+  </script>      
+   </body>
+</html>

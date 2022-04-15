@@ -1,0 +1,27 @@
+<html>
+   <head>
+      <title>Prototype Boolean</title>      
+           
+   </head>
+   <body>      
+    
+    <p>Return "green" if a boolean value is true, otherwise display "red":</p>
+    <p id="demo"></p>
+
+    <script>
+        // prototype allows you to add new properties and methods to booleans.
+
+        // prototype is a property available with all JavaScript objects.
+    Boolean.prototype.myColor = function() {
+      if (this.valueOf() == true) {
+        return "green";
+      } else {
+        return "red";
+      }
+    };
+    
+    let a = true;
+    document.getElementById("demo").innerHTML = a.myColor();
+    </script>   
+   </body>
+</html>

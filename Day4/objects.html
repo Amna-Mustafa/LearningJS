@@ -1,0 +1,33 @@
+JAVASCRIPT – Objects
+
+
+1. Object Properties
+
+-> Object properties are defined as a simple association between name and value.
+
+var str = document.title;
+
+2. Object Methods
+An object is a collection of key/value pairs or properties. When the value is a function, the property becomes a method.
+<script>
+    // Create an object:
+    const person = {
+      firstName: "John",
+      lastName: "Doe",
+      id: 5566,
+      fullName : function() {
+        return this.firstName + " " + this.lastName;
+      }
+    };
+    
+    // Display data from the object:
+    document.getElementById("demo").innerHTML = person.fullName();
+    </script>
+3. User-Defined Objects
+    =- User-defined objects: these are objects which you have created in your program or application.
+    <script>
+        var employee = new Object();
+        var books = new Array("C++", "Perl", "Java");
+        var day = new Date("August 15, 1947");
+    </script>
+    
