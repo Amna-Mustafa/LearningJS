@@ -1,0 +1,32 @@
+<html>
+   <head>
+      
+      <script type = "text/javascript">
+        // The try statement defines a code block to run (to try).
+        // The catch statement defines a code block to handle any error.
+        // The finally statement defines a code block to run regardless of the result.
+            function myFunc() {
+               var a = 100;
+               
+               try {
+                  alert("Value of variable a is : " + a );
+               }
+               catch ( e ) {
+                  alert("Error: " + e.description );
+               }
+               finally {
+                  alert("Finally block will always execute!" );
+               }
+            }
+      </script>
+      
+   </head>
+   <body>
+      <p>Click the following to see the result:</p>
+      
+      <form>
+         <input type = "button" value = "Click Me" onclick = "myFunc();" />
+      </form>
+      
+   </body>
+</html>
