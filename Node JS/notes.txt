@@ -1,0 +1,59 @@
+
+NODE JS - Introduction
+
+    In the synchronous case, each statement completes before the next statement is run. In this case the program is evaluated exactly in order of the statements.
+    Asynchronous code is called non blocking because it doesn't block further code from running.
+
+    NVM allows users to:
+
+    (i) Locally download any of the remote Long Term Support (LTS) versions of Node.js with a simple command.
+    (ii) Easily switch between multiple versions of Node.js, right from the command line.
+    (iii) Set up aliases to switch between different downloaded versions of Node.js with ease.
+
+NODE JS - Packages
+ 
+    https://blog.bitsrc.io/5-best-practices-when-choosing-third-party-npm-packages-2198994357f9
+    Use npm list [package-name] to know the specific latest version of an installed package.
+    Use npm install [package-name]@[version-number] to install an older version of a package. 
+    Prefix a version number with a caret (^) or a tilde (~) to specify to install the latest minor or patch version, respectively.
+
+NODE JS – Package Managers
+
+    (i) npm is the default Node.js package manager. It comes shipped with your Node.js installation and is the one featured in most tutorials.
+    (ii) The yarn package manager doesn’t come shipped with Node.js and will need to be installed separately. The yarn package manager doesn’t come shipped with Node.js and will need to be installed separately.
+    (iii) Pnpm, or performant npm, is another npm alternative. As the name suggests it is way faster than your regular package manager. Not only that but pnpm is also way more disk-efficient than the two others. Unlike npm or yarn, pnpm only installs a dependency once. That way your projects can share dependencies and you will save a whole lot of diskspace.
+
+    If I have to pick one though, then this is how I would choose:
+    => Npm, for basic projects that need to work with the standard Node.js installation
+    => Yarn, for more advanced use-cases like workspaces
+    => Pnpm, if disk efficiency is important for you or your project
+   
+NODE JS – Package.json
+
+    When you install an npm package using npm install <package-name>, you are installing it as a dependency.
+    To specify the packages your project depends on, you must list them as "dependencies" or "devDependencies" in your package's package.json file.
+
+    => "dependencies": Packages required by your application in production.
+
+    => "devDependencies": Packages that are only needed for local development and testing. Development dependencies are intended as development-only packages, that are unneeded in production. When you add the -D flag, or --save-dev, you are installing it as a development dependency, which adds it to the devDependencies list.
+
+    => Peer Dependencies are listed in the package.json file in a peerDependencies object.
+    By adding a package in peerDependencies you are saying:
+
+    My code is compatible with this version of the package.
+    If this package already exists in node_modules, do nothing.
+    If this package doesn’t already exist in the node_modules directory or it is the wrong version, don’t add it. But, show a warning to the user that it wasn’t found.
+
+    => The "scripts" property of your package.json file supports a number of built-in scripts and their preset life cycle events as well as arbitrary scripts. These all can be executed by running npm run-script <stage> or npm run <stage> for short.
+
+
+NODE JS – Functional programming
+
+    Node.js uses event driven programming. It means as soon as Node starts its server, it simply initiates its variables, declares functions and then simply waits for event to occur. It is the one of the reason why Node.js is pretty fast compared to other similar technologies.
+
+    There is a main loop in the event driven application that listens for events, and then triggers a callback function when one of those events is detected.
+
+NODE JS - Eslint
+
+    ESLint is a JavaScript and TypeScript linting tool, that means it analyses source code and identifies possible programming problems and errors. It underlines errors in red and warnings in yellow. It is very useful to cover coding styles issues.
+    https://www.section.io/engineering-education/node-eslint/
