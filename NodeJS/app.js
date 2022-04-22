@@ -13,7 +13,7 @@ const server = http.createServer((req, res) => {
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
-
+ 
 var today=new Date();
 console.log(today.getDate());
 console.log(today.getDay());
@@ -25,4 +25,5 @@ console.log(today.getSeconds());
 
 var st1 ="Hello,";
 var st2="How are you doing?";
+var st3="";
 console.log(st1 + st2);

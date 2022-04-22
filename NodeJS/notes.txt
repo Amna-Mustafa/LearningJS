@@ -11,13 +11,13 @@ NODE JS - Introduction
     (iii) Set up aliases to switch between different downloaded versions of Node.js with ease.
 
 NODE JS - Packages
- 
+  
     https://blog.bitsrc.io/5-best-practices-when-choosing-third-party-npm-packages-2198994357f9
     Use npm list [package-name] to know the specific latest version of an installed package.
     Use npm install [package-name]@[version-number] to install an older version of a package. 
     Prefix a version number with a caret (^) or a tilde (~) to specify to install the latest minor or patch version, respectively.
 
-NODE JS – Package Managers
+NODE JS – Package Managers 
 
     (i) npm is the default Node.js package manager. It comes shipped with your Node.js installation and is the one featured in most tutorials.
     (ii) The yarn package manager doesn’t come shipped with Node.js and will need to be installed separately. The yarn package manager doesn’t come shipped with Node.js and will need to be installed separately.
